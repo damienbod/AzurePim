@@ -10,10 +10,12 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        builder.Services.AddDistributedMemoryCache();
+
         builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
             .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"))
             .EnableTokenAcquisitionToCallDownstreamApi()
-            .AddInMemoryTokenCaches();
+            .AddDistributedTokenCaches();
 
         builder.Services.AddAuthorization(options =>
         {

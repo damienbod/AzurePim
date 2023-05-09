@@ -1,4 +1,4 @@
-# Azure PIM
+# Azure Privileged Identity Management (PIM)
 
 ## Links
 

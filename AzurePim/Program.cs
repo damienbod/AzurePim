@@ -9,6 +9,9 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        var services = builder.Services;
+
+        builder.Services.AddScoped<CaeClaimsChallengeService>();
 
         builder.Services.AddDistributedMemoryCache();
 
@@ -21,7 +24,8 @@ public class Program
         {
             options.FallbackPolicy = options.DefaultPolicy;
         });
-        builder.Services.AddRazorPages()
+
+        services.AddRazorPages()
             .AddMicrosoftIdentityUI();
 
         var app = builder.Build();

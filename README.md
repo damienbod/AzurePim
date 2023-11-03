@@ -2,9 +2,7 @@
 
 [![.NET](https://github.com/damienbod/AzurePim/actions/workflows/dotnet.yml/badge.svg)](https://github.com/damienbod/AzurePim/actions/workflows/dotnet.yml)
 
-## History
-
-- 2023-11-03 Updated packages
+[Use Azure PIM with groups in ASP.NET Core](https://damienbod.com/2023/05/15/use-azure-pim-with-groups-in-asp-net-core/)
 
 ## Links
 

@@ -6,7 +6,6 @@
 
 ## History
 
-
 - 2024-08-14 Updated packages
 - 2024-06-22 Updated packages
 - 2023-11-28 Updated .NET 8F
